@@ -67,14 +67,14 @@ amp_slider = Slider(
 
 
 # Function to be rendered anytime a slider's value changes
-def update(val):
-    line.set_ydata(f(t, amp_slider.val, freq_slider.val))
-    fig.canvas.draw_idle()
+# def update(val):
+#     line.set_ydata(f(t, amp_slider.val, freq_slider.val))
+#     fig.canvas.draw_idle()
 
 
 # Registering the update function with each slider Update
-freq_slider.on_changed(update)
-amp_slider.on_changed(update)
+# freq_slider.on_changed(update)
+# amp_slider.on_changed(update)
 
 # Create a `matplotlib.widgets.Button` to reset
 # the sliders to initial parameters.
